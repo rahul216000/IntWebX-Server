@@ -40,6 +40,11 @@ app.post("/api/law-firm-clients", (req, res) => {
   res.status(200).json({ message: "Form received successfully" });
 });
 
+app.get("/", (req, res) => {
+
+  res.send("OK");
+});
+
 
 function SentQuoteToMe(name, firm, email, phone, website) {
   const sender = {
